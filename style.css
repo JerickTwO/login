@@ -1,0 +1,56 @@
+body, html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(44, 44, 44);
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container{
+    width: 300px;
+    background-color:  #191919;
+    padding: 40px ;
+    text-align: center;/*ALINEA H1 O TITULO*/
+}
+h1{
+    color: #ffffff;
+}
+.container input[type="text"],
+.container input[type="password"],
+.container button[type="submit"]{
+    border: 2px solid rgba(55, 65, 250);
+    background: none;
+    display: block;/*PARA QUE ESTÉ UNO ENCIMA DEL OTRO*/
+    margin: 20px auto;
+    outline: none;
+    padding: 12px 10px;
+    text-align: center;/*ALINEA EL PLACE HOLDER Y BOTON*/
+    border-radius: 20px;
+    width: 200px;
+    color: #ffffff;
+    transition: 0.25s;
+}
+.container input[type="text"]:focus,
+.container input[type="password"]:focus{
+    width: 280px;
+    border-color: #ffffff;
+}
+.container button[type="submit"]{
+    background-color: #5352ed;
+    cursor: pointer;
+    border: 2px solid #5352ed;
+
+
+}
+.container button[type="submit"]:focus{
+    background: none;
+}
+
+
